@@ -106,7 +106,7 @@ export const experience: {
     role: "Founding Software Development Engineer",
     company: "Unsweetened Beauty",
     url: "https://www.linkedin.com/company/unsweetened-beauty/",
-    location: "Hyderabad (Remote)",
+    location: "Remote",
     dates: "Mar 2023 – Feb 2025",
     points: [
       "First engineering hire; built the company's cross-platform mobile app from scratch (React Native, Redux), which won Google Play's Hidden Gem award in 2023.",

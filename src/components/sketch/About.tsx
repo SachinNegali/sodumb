@@ -4,7 +4,9 @@ import SketchHeading from "./SketchHeading";
 export default function About() {
   return (
     <section id="about" className="scroll-mt-8 pb-12">
-      <SketchHeading>Who, Me?</SketchHeading>
+      <SketchHeading>
+        Who, <span className="hd-underline">Me</span>?
+      </SketchHeading>
 
       <div className="hd-box rotate-[-0.6deg] bg-white/50 p-6 shadow-[5px_6px_0_0_#33302a] sm:p-8">
         <div className="space-y-4 font-note text-lg leading-relaxed text-sketch-ink">

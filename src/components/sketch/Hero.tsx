@@ -62,7 +62,7 @@ export default function Hero() {
             {...(s.external
               ? { target: "_blank", rel: "noopener noreferrer" }
               : {})}
-            className="text-sketch-soft underline decoration-wavy decoration-sketch-accent/70 underline-offset-4 transition-colors hover:text-sketch-accent"
+            className="text-sketch-soft underline decoration-sketch-accent/70 decoration-1 underline-offset-[6px] transition-colors hover:text-sketch-accent"
           >
             {s.label}
           </a>

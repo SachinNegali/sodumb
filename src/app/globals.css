@@ -54,13 +54,17 @@ body {
   border-radius: 15px 225px 15px 255px / 255px 15px 225px 15px;
 }
 
-/* Hand-drawn squiggle underline (an inline SVG stroke in the accent hue). */
+/* Hand-drawn squiggle underline. A fixed-size tile that REPEATS across the
+   word, so stroke thickness stays constant regardless of the word's width
+   (a stretched single SVG would look thin on short words, thick on long ones).
+   Tile aspect (30:10) matches the background-size aspect (1.2em:0.4em) so the
+   stroke scales uniformly. */
 .hd-underline {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='14' viewBox='0 0 240 14'%3E%3Cpath d='M4 9c34-8 70 5 106 1s70-9 126-3' fill='none' stroke='%23e8563f' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: left 100%;
-  background-size: 100% 0.5em;
-  padding-bottom: 0.12em;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='12' viewBox='0 0 48 12'%3E%3Cpath d='M0 6 Q12 4.8 24 6 T48 6' fill='none' stroke='%23e8563f' stroke-width='1' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  background-size: 1.6em 0.4em;
+  padding-bottom: 0.16em;
 }
 
 /* Hand-drawn squiggle strike-through (wavy, slightly rising ink line). */

@@ -17,7 +17,9 @@ const tapeClip =
 export default function Projects() {
   return (
     <section id="projects" className="scroll-mt-8 py-6">
-      <SketchHeading>Drunk Ideas that stuck</SketchHeading>
+      <SketchHeading>
+        <span className="hd-underline">Drunk Ideas</span> that stuck
+      </SketchHeading>
 
       <div className="grid gap-10 pt-4 sm:grid-cols-2">
         {projects.map((project, i) => {

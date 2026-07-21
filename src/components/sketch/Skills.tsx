@@ -7,7 +7,9 @@ const tilts = ["-rotate-2", "rotate-1", "rotate-2", "-rotate-1", "rotate-[0.5deg
 export default function Skills() {
   return (
     <section id="skills" className="scroll-mt-8 py-6">
-      <SketchHeading>Stuff I think I know</SketchHeading>
+      <SketchHeading>
+        Stuff I think <span className="hd-underline">I know</span>
+      </SketchHeading>
 
       <div className="space-y-4">
         {skillGroups.map((group) => (

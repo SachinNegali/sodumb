@@ -6,7 +6,9 @@ const tilts = ["rotate-[-0.8deg]", "rotate-[0.7deg]"];
 export default function Experience() {
   return (
     <section id="experience" className="scroll-mt-8 py-6">
-      <SketchHeading>Where i&rsquo;ve worked</SketchHeading>
+      <SketchHeading>
+        Where i&rsquo;ve <span className="hd-underline">worked</span>
+      </SketchHeading>
 
       <div className="space-y-6">
         {experience.map((job, i) => (
@@ -25,7 +27,7 @@ export default function Experience() {
                 href={job.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sketch-ink underline decoration-wavy decoration-sketch-accent/60 underline-offset-2 transition-colors hover:text-sketch-accent"
+                className="text-sketch-ink underline decoration-sketch-accent/60 decoration-1 underline-offset-[5px] transition-colors hover:text-sketch-accent"
               >
                 {job.company}
               </a>{" "}
