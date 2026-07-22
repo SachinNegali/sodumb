@@ -15,7 +15,7 @@ export default function About() {
           ))}
         </div>
         <p className="mt-5 font-note text-lg text-sketch-soft">
-          based in{" "}
+          Exists in{" "}
           <span className="hd-mark font-bold text-sketch-ink">
             {site.location}
           </span>
